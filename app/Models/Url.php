@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Url extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['url', 'user_id'];
+
+    public $timestamps = false;
+
+    public function user()
+    {
+        return  $this->belongsTo(User::class);
+    }
 }
