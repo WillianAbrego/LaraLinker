@@ -8,6 +8,11 @@ class CodeGenerator
 
     public function get_code($key)
     {
+        $random_num = $this->get_random_num($key);
+        $base62_num = $this->get_base62($random_num);
+        $random_key = $this->chars[rand(0, 61)];
+        $code = $random_key . $base62_num;
+        return $code;
     }
 
     private function get_random_num($key)

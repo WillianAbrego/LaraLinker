@@ -11,7 +11,7 @@ window.shorter = {
                     document.getElementById("long_url").value = "";
                     document.getElementById(
                         "short_url_container"
-                    ).style.display = "blck";
+                    ).style.display = "block";
                     document.getElementById("short_url").value =
                         response.data.short_url;
                 })

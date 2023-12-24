@@ -19,7 +19,7 @@ class Url extends Model
         return  $this->belongsTo(User::class);
     }
 
-    public function short_url()
+    public function short_url($long_url)
     {
         //crea la url
         $url = self::create([
