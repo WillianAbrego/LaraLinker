@@ -24,5 +24,20 @@ class CodeGenerator
 
     private function get_base62($cociente)
     {
+        $status = true;
+        $base62_num = "";
+        do {
+            if ($cociente > 62) {
+                $residuo = $cociente % 62;
+                $cociente = intdiv($cociente, 62);
+                $base62_num .= $this->chars[$residuo];
+            } else {
+                $status = false;
+                $base62_num .= $this->chars[$cociente];
+            }
+        } while ($status);
+
+        $base62_num = strrev($base62_num);
+        return $base62_num;
     }
 }
