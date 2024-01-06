@@ -82,7 +82,9 @@ Una vez ejecutado, puedes acceder a tu aplicación en el navegador a través de 
 
 ## Base de datos
 
+![db](assets/db.png)
 
+***
 ## Instrucciones para Pruebas
 
 Ingresar a http://127.0.0.1:8000/register y crear un usuario
@@ -92,6 +94,7 @@ Ingresar a http://127.0.0.1:8000/register y crear un usuario
 Posteriormente ingresar a http://127.0.0.1:8000/login e ingresar las credenciales que creo en el paso anterior 
 
 ![Login](assets/login.png)
+
 Se presentara la siguiente vista donde puede ingresar la url a acortar.
 
 ![Dashboard](assets/dashboard.png)
